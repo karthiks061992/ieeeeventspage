@@ -11,6 +11,43 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     </head>
     <body style="background-image: linear-gradient(to left,maroon,black);">
+        <!--nav bar for hdpi laptop-->
+        <nav class="navbar" id="dull" style="background-color: maroon;">
+            <p style="padding-left:1%;color: goldenrod;"> <a href="#section1" style="color: goldenrod;">KALPANA</a></p>
+            <p> <a href="#section2" style="color: goldenrod;">CODE-JAM</a></p>
+            <p> <a href="#section3" style="color: goldenrod;">QUIZ</a></p>
+            <p> <a href="#section4" style="color: goldenrod;">BLASTOFF</a></p>
+        </nav>
+            <button type="button" class="btn btn-primary" id="but">+</button>
+        <div class="overlay">
+            <ul style="padding-top: 20%;">
+                <li>
+                    <a href="#section1" style="color: white;">kalpana</a>
+                </li>
+                <li style="padding-top: 20%;">
+                    <a href="#section2" style="color: white;">codejam</a>
+                </li style="padding-top:20%">
+                <li style="padding-top: 20%;">
+                    <a href="#section3" style="color: white;">quiz</a>
+                </li style="padding-top:20%">
+                <li style="padding-top: 20%;"> 
+                    <a href="#section4" style="color: white;">blastoff</a>
+                </li>
+            </ul>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $("#but").click(function(){
+                    $(".overlay").toggleClass("active");
+                })
+            })
+            $(document).ready(function(){
+                $("a").click(function(){
+                    $(".overlay.active").toggleClass(".overlay");
+                })
+            })
+        </script>
+        <section id="section1">
         <h1 style="padding-bottom:4%;color: goldenrod;text-align: center;padding-top: 2%;">KALPANA</h1>
         <div class="kalpana" >
             <div class="card" id="description" style="margin-left:2%">
@@ -42,7 +79,115 @@
             </div>
             <img class="kalp" src="chicago.jpg"/>
             <button type="button" class="btn btn-primary btn-block" id="butkalp">Register</button> 
-           
-        </div>
+            </div>
+         </section>
+         <!--section1 ends-->
+         <section id="section2">
+            <h1 style="padding-bottom:4%;color: goldenrod;text-align: center;padding-top: 2%;">CODE-JAM</h1>
+            <div class="kalpana" >
+                <div class="card" id="description" style="margin-left:2%">
+                    <div class="card-header" style="background-color: lightblue;">
+                        <h2>Description</h2>
+                    </div>
+                    <div class="card-body" style="background-color: seashell;">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A vitae exercitationem sunt, rem id, odio ea dolore mollitia possimus velit fugit optio, architecto sequi deserunt aliquid praesentium minus dicta nesciunt.</p>
+    
+                    </div>
+                </div>
+                <div class="card" id="time" style="margin-left: 2%;">
+                    <div class="card-header" style="background-color: lightblue;">
+                        <h2>Time And Venue</h2>
+                    </div>
+                    <div class="card-body" style="background-color:seashell">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A vitae exercitationem sunt, rem id, odio ea dolore mollitia possimus velit fugit optio, architecto sequi deserunt aliquid praesentium minus dicta nesciunt.</p>
+    
+                    </div>
+                </div>
+                <div class="card" id="prizes" style="margin-left: 2%;">
+                    <div class="card-header" style="background-color: lightblue;">
+                        <h2>Prizes</h2>
+                    </div>
+                    <div class="card-body" style="background-color: seashell;">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A vitae exercitationem sunt, rem id, odio ea dolore mollitia possimus velit fugit optio, architecto sequi deserunt aliquid praesentium minus dicta nesciunt.</p>
+    
+                    </div>
+                </div>
+                <img class="kalp" src="chicago.jpg"/>
+                <button type="button" class="btn btn-primary btn-block" id="butkalp">Register</button> 
+                </div>
+             </section>
+             <!--section 2 ends-->
+             <section id="section3">
+                <h1 style="padding-bottom:4%;color: goldenrod;text-align: center;padding-top: 2%;">QUIZ</h1>
+                <div class="kalpana" >
+                    <div class="card" id="description" style="margin-left:2%">
+                        <div class="card-header" style="background-color: lightblue;">
+                            <h2>Description</h2>
+                        </div>
+                        <div class="card-body" style="background-color: seashell;">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A vitae exercitationem sunt, rem id, odio ea dolore mollitia possimus velit fugit optio, architecto sequi deserunt aliquid praesentium minus dicta nesciunt.</p>
+        
+                        </div>
+                    </div>
+                    <div class="card" id="time" style="margin-left: 2%;">
+                        <div class="card-header" style="background-color: lightblue;">
+                            <h2>Time And Venue</h2>
+                        </div>
+                        <div class="card-body" style="background-color:seashell">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A vitae exercitationem sunt, rem id, odio ea dolore mollitia possimus velit fugit optio, architecto sequi deserunt aliquid praesentium minus dicta nesciunt.</p>
+        
+                        </div>
+                    </div>
+                    <div class="card" id="prizes" style="margin-left: 2%;">
+                        <div class="card-header" style="background-color: lightblue;">
+                            <h2>Prizes</h2>
+                        </div>
+                        <div class="card-body" style="background-color: seashell;">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A vitae exercitationem sunt, rem id, odio ea dolore mollitia possimus velit fugit optio, architecto sequi deserunt aliquid praesentium minus dicta nesciunt.</p>
+        
+                        </div>
+                    </div>
+                    <img class="kalp" src="chicago.jpg"/>
+                    <button type="button" class="btn btn-primary btn-block" id="butkalp">Register</button> 
+                    </div>
+                 </section>
+                 <!--section 3 ends-->
+                 <section id="section4">
+                    <h1 style="padding-bottom:4%;color: goldenrod;text-align: center;padding-top: 2%;">BLASTOFF</h1>
+                    <div class="kalpana" >
+                        <div class="card" id="description" style="margin-left:2%">
+                            <div class="card-header" style="background-color: lightblue;">
+                                <h2>Description</h2>
+                            </div>
+                            <div class="card-body" style="background-color: seashell;">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A vitae exercitationem sunt, rem id, odio ea dolore mollitia possimus velit fugit optio, architecto sequi deserunt aliquid praesentium minus dicta nesciunt.</p>
+            
+                            </div>
+                        </div>
+                        <div class="card" id="time" style="margin-left: 2%;">
+                            <div class="card-header" style="background-color: lightblue;">
+                                <h2>Time And Venue</h2>
+                            </div>
+                            <div class="card-body" style="background-color:seashell">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A vitae exercitationem sunt, rem id, odio ea dolore mollitia possimus velit fugit optio, architecto sequi deserunt aliquid praesentium minus dicta nesciunt.</p>
+            
+                            </div>
+                        </div>
+                        <div class="card" id="prizes" style="margin-left: 2%;">
+                            <div class="card-header" style="background-color: lightblue;">
+                                <h2>Prizes</h2>
+                            </div>
+                            <div class="card-body" style="background-color: seashell;">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A vitae exercitationem sunt, rem id, odio ea dolore mollitia possimus velit fugit optio, architecto sequi deserunt aliquid praesentium minus dicta nesciunt.</p>
+            
+                            </div>
+                        </div>
+                        <img class="kalp" src="chicago.jpg"/>
+                        <button type="button" class="btn btn-primary btn-block" id="butkalp">Register</button> 
+                        </div>
+                     </section>
+                     <!--section 4 ends-->
+
+         
     </body>
 </html>
